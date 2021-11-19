@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 2d58ef80b735dbb32a59d1daac8d0f1e56a3df15
+    app.openshift.io/vcs-ref: 9fdbe2215b2ceecd7d8f761442491e8ec64bafdb
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea8-squad4-meme-generator-backend
   labels:
     app.kubernetes.io/instance: squad4-meme-generator-backend
@@ -23,7 +23,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 2d58ef80b735dbb32a59d1daac8d0f1e56a3df15
+    app.openshift.io/vcs-ref: 9fdbe2215b2ceecd7d8f761442491e8ec64bafdb
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea8-squad4-meme-generator-backend
   labels:
     app.kubernetes.io/instance: squad4-meme-generator-backend
@@ -38,12 +38,12 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 2d58ef80b735dbb32a59d1daac8d0f1e56a3df15
+        app.openshift.io/vcs-ref: 9fdbe2215b2ceecd7d8f761442491e8ec64bafdb
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea8-squad4-meme-generator-backend
       labels:
         app.kubernetes.io/instance: squad4-meme-generator-backend
         app.kubernetes.io/name: squad4-meme-generator-backend
     spec:
       containers:
-      - image: quay.io/levandrejev/squad4-meme-generator-backend:2d58ef80b735dbb32a59d1daac8d0f1e56a3df15
+      - image: quay.io/levandrejev/squad4-meme-generator-backend:9fdbe2215b2ceecd7d8f761442491e8ec64bafdb
         name: squad4-meme-generator-backend
